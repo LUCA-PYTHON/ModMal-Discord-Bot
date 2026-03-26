@@ -785,6 +785,5 @@ class info(commands.Cog):
                 if db_daten is None:
                     await interaction.response.send_message("Nicht gebannt.")
 
-
 async def setup(bot: commands.Bot) -> None:
     await bot.add_cog(info(bot))
