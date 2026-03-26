@@ -6,7 +6,6 @@ from discord import app_commands
 from discord.app_commands import Choice
 from discord.ext import commands
 
-
 class Button_Fuehrung(discord.ui.View):
     def __init__(self, author_id):
         super().__init__()
@@ -785,7 +784,6 @@ class info(commands.Cog):
 
                 if db_daten is None:
                     await interaction.response.send_message("Nicht gebannt.")
-
 
 async def setup(bot: commands.Bot) -> None:
     await bot.add_cog(info(bot))
